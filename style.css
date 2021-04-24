@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Montserrat:wght@300&family=Roboto:wght@300&display=swap');
+
+body {
+  --text-color: rgb(27, 27, 27);
+  --bkg-color: white;
+  --hd-color: lightblue;
+}
+body.dark-theme {
+  --text-color: white;
+  --bkg-color: rgb(41, 41, 41);
+  --hd-color: mediumpurple;
+}
+
+body.dark-theme img {
+  filter: brightness(.8) contrast(1.2);
+}
+body img {
+  filter: brightness(1) contrast(1);
+}
+
+body {
+  background: var(--bkg-color);
+}
+
+p {
+  color: var(--text-color);
+  font-family: 'Montserrat', cursive;
+}
+
+h1{
+ color: var(--hd-color);
+ font-family: 'Josefin Sans', cursive;
+ font-size: 50px;
+ text-align: center;
+}
+
+a{
+ transition: color 0.4s ease-in-out;
+ color: var(--hd-color); 
+}
+
+a:hover{
+  color: var(--text-color);
+}
+
+.footer{
+  border-radius: 20px;
+  opacity: 0.5;
+  background-color: var(--bkg-color);
+  display: block; 
+  font-size: 10px;
+  text-align: center;
+}
+
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a, .navbar button {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Montserrat', cursive;
+}
+
+.navbar {
+  transition: background 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 70px; /* Add a top margin to avoid content overlay */
+}
+
+.btn-toggle{
+ background-color: #333;
+}
+::-moz-selection { /* Code for Firefox */
+  color: var(--bkg-color);
+  background: var(--hd-color);
+}
+
+::selection {
+  color: var(--bkg-color);
+  background: var(--hd-color);
+}
+
+i.fab{
+margin: 30px;
+font-size: 50px;
+display: inline-block;
+}
+
+.fa-discord {
+height: 200px;
+color: cornflowerblue;
+
+}
+
+.fa-tiktok {
+	animation-name: TikTok;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear; 
+	/* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+@keyframes TikTok {
+	15% {
+		color: #69C9D0;
+	}
+	30% {
+		color: #EE1D52;
+	}
+	45% {
+		color: #FFFFFF;
+	}
+}
+
+.songpage {
+  background-image: url('Hannah2.jpg');
+}
+.HannahMain {
+  display: inline;
+}
+
+.songtable {
+  display: inline-block;
+  background-color: rgb(256, 256, 256, 0.4);
+  border-radius: 20px;
+  width: 100%;
+  height: 90px;
+  padding-top: 15px;
+  padding-left: 5px;
+}
